@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../assets/style/Auth.css';
@@ -114,7 +114,7 @@ const Register = () => {
               <label className="checkbox-container">
                 <input type="checkbox" required />
                 <span className="checkbox-text">
-                  I agree to the <a href="#" className="auth-link">Terms of Service</a> and <a href="#" className="auth-link">Privacy Policy</a>
+                  I agree to the <Link to="/terms-of-service" className="auth-link">Terms of Service</Link> and <Link to="/privacy-policy" className="auth-link">Privacy Policy</Link>
                 </span>
               </label>
             </div>
@@ -123,7 +123,7 @@ const Register = () => {
           </form>
 
           <div className="auth-footer">
-            <p>Already have an account? <a href="/login" className="auth-link">Sign In</a></p>
+            <p>Already have an account? <Link to="/login" className="auth-link">Sign In</Link></p>
           </div>
         </div>
       </div>
