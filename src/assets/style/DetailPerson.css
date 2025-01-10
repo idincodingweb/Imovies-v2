@@ -1,0 +1,166 @@
+.person-detail {
+  background-color: #000; /* Latar belakang hitam */
+  color: #fff; /* Teks putih untuk konten */
+  padding: 20px 0; /* Padding atas dan bawah */
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Membuat gambar profil menjadi bulat */
+  border: 2px solid #ff0000; /* Border merah */
+}
+
+.profile-header {
+  margin-bottom: 40px;
+}
+
+.profile-name {
+  font-size: 2rem;
+  color: #ff0000; /* Teks merah untuk nama */
+}
+
+.social-links {
+  margin: 15px 0;
+}
+
+.social-link {
+  color: #ff0000; /* Warna merah untuk ikon sosial media */
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #fff; /* Ubah ke warna putih saat hover */
+}
+
+.info-card {
+  background-color: #1a1a1a; /* Warna latar belakang kartu */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(255, 0, 0, 0.5); /* Bayangan merah */
+  padding: 20px; /* Padding dalam kartu */
+}
+
+.section-title {
+  font-size: 1.5rem; /* Ukuran font judul */
+  margin-bottom: 1rem;
+  color: #ff0000; /* Teks merah untuk judul */
+}
+
+.info-item h3 {
+  color: #ff0000; /* Teks merah untuk sub-judul */
+}
+
+.biography-content p {
+  color: #fff; /* Teks putih untuk biografi */
+}
+
+.read-more-btn {
+  color: #ff0000; /* Teks merah untuk tombol baca lebih lanjut */
+  background: none; /* Menghilangkan background */
+  border: none; /* Menghilangkan border */
+  cursor: pointer; /* Menunjukkan bahwa ini bisa diklik */
+}
+
+.read-more-btn:hover {
+  text-decoration: underline; /* Garis bawah saat hover */
+}
+
+.movie-card {
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+}
+
+.movie-poster-wrapper {
+  border-radius: 8px; /* Sudut melingkar pada poster film */
+  overflow: hidden; /* Menghindari gambar keluar dari bingkai */
+}
+
+.movie-title {
+  font-size: 1rem; /* Ukuran font untuk judul film */
+  margin-top: 0.5rem;
+  color: #fff; /* Teks putih untuk judul film */
+}
+
+.filmography-container {
+  display: flex;
+  align-items: center;
+}
+
+.filmography-scroll {
+  display: flex;
+  overflow-x: auto; /* Scroll horizontal */
+  scroll-behavior: smooth; /* Efek scroll halus */
+  padding: 10px 0; /* Padding atas dan bawah */
+  gap: 10px; /* Jarak antar film */
+}
+
+.movie-card {
+  min-width: 150px; /* Lebar minimum untuk setiap film */
+  text-align: center; /* Pusatkan teks */
+}
+
+.arrow-icon {
+  cursor: pointer;
+  color: #ff0000; /* Warna merah untuk ikon panah */
+  width: 30px;
+  height: 30px;
+}
+
+.left-arrow {
+  margin-right: 10px; /* Jarak antara panah kiri dan film */
+}
+
+.right-arrow {
+  margin-left: 10px; /* Jarak antara film dan panah kanan */
+}
+
+/* Tambahan styling untuk scroll */
+.filmography-scroll::-webkit-scrollbar {
+  height: 8px; /* Tinggi scrollbar */
+}
+
+.filmography-scroll::-webkit-scrollbar-thumb {
+  background: #ff0000; /* Warna scrollbar */
+  border-radius: 10px; /* Sudut scrollbar */
+}
+
+.filmography-scroll::-webkit-scrollbar-track {
+  background: #333; /* Latar belakang track scrollbar */
+}
+
+.info-item {
+  margin-bottom: 15px; /* Jarak antar item informasi */
+}
+
+.social-links {
+  justify-content: center;
+  align-items: center;
+}
+
+.info-value {
+  font-weight: bold;
+  color: #fff; /* Teks putih untuk nilai informasi */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .profile-image {
+    width: 120px; /* Ukuran gambar lebih kecil di perangkat kecil */
+    height: 120px;
+  }
+
+  .section-title {
+    font-size: 1.25rem; /* Ukuran font judul lebih kecil di perangkat kecil */
+  }
+
+  .movie-title {
+    font-size: 0.9rem; /* Ukuran font judul film lebih kecil */
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-name {
+    font-size: 1.5rem; /* Ukuran font nama lebih kecil di perangkat sangat kecil */
+  }
+}
