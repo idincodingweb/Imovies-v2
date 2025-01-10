@@ -1,6 +1,5 @@
-// Navbar.jsx
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { auth, onAuthStateChanged, logOutUser } from '../firebaseConfig';
 import { User, LogOut } from 'lucide-react';
 import '../assets/style/Navbar.css';
@@ -34,23 +33,23 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">IMOVIE.CO</a>
+        <Link className="navbar-brand" to="/">IMOVIE.CO</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" href="/">Home</a>
+              <Link className="nav-link active" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/aboutme">About</a>
+              <Link className="nav-link" to="/aboutme">About</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#movies">Movies</a>
+              <Link className="nav-link" to="#movies">Movies</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#news">News</a>
+              <Link className="nav-link" to="#news">News</Link>
             </li>
           </ul>
           {isLoggedIn ? (
@@ -58,13 +57,13 @@ const Navbar = () => {
               <button className="btn btn-danger me-2" onClick={handleLogout}>
                 <LogOut size={20} />
               </button>
-              <a href="/profile" className="nav-link">
+              <Link to="/profile" className="nav-link">
                 <User size={20} />
-              </a>
+              </Link>
             </div>
           ) : (
             <button className="btn btn-danger">
-              <a className="nav-link" href="login">Sign In</a>
+              <Link className="nav-link" to="/login">Sign In</Link>
             </button>
           )}
         </div>
