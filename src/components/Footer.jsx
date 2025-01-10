@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Twitter, Mail, Phone, MapPin, Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import '../assets/style/Footer.css';
 
 const Footer = () => {
@@ -22,9 +23,9 @@ const Footer = () => {
               <a href="#" className="btn btn-dark rounded-circle p-2 d-flex align-items-center hover-danger">
                 <Twitter size={20} />
               </a>
-              <a href="/contact" className="btn btn-dark rounded-circle p-2 d-flex align-items-center hover-danger">
+              <Link to="/contact" className="btn btn-dark rounded-circle p-2 d-flex align-items-center hover-danger">
                 <Mail size={20} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -33,19 +34,19 @@ const Footer = () => {
             <h5 className="text-white mb-4">Quick Links</h5>
             <ul className="list-unstyled footer-links">
               <li className="mb-3">
-                <a href="#" className="text-secondary text-decoration-none hover-text-danger">Home</a>
+                <Link to="/" className="text-secondary text-decoration-none hover-text-danger">Home</Link>
               </li>
               <li className="mb-3">
-                <a href="#" className="text-secondary text-decoration-none hover-text-danger">Movies</a>
+                <Link to="/movies" className="text-secondary text-decoration-none hover-text-danger">Movies</Link>
               </li>
               <li className="mb-3">
-                <a href="#" className="text-secondary text-decoration-none hover-text-danger">TV Shows</a>
+                <Link to="/tvshows" className="text-secondary text-decoration-none hover-text-danger">TV Shows</Link>
               </li>
               <li className="mb-3">
-                <a href="/about" className="text-secondary text-decoration-none hover-text-danger">About Us</a>
+                <Link to="/aboutme" className="text-secondary text-decoration-none hover-text-danger">About Us</Link>
               </li>
               <li className="mb-3">
-                <a href="contact" className="text-secondary text-decoration-none hover-text-danger">Contact</a>
+                <Link to="/contact" className="text-secondary text-decoration-none hover-text-danger">Contact</Link>
               </li>
             </ul>
           </div>
@@ -55,19 +56,19 @@ const Footer = () => {
             <h5 className="text-white mb-4">Categories</h5>
             <ul className="list-unstyled footer-links">
               <li className="mb-3">
-                <a href="#" className="text-secondary text-decoration-none hover-text-danger">Action</a>
+                <Link to="/category/action" className="text-secondary text-decoration-none hover-text-danger">Action</Link>
               </li>
               <li className="mb-3">
-                <a href="#" className="text-secondary text-decoration-none hover-text-danger">Comedy</a>
+                <Link to="/category/comedy" className="text-secondary text-decoration-none hover-text-danger">Comedy</Link>
               </li>
               <li className="mb-3">
-                <a href="#" className="text-secondary text-decoration-none hover-text-danger">Drama</a>
+                <Link to="/category/drama" className="text-secondary text-decoration-none hover-text-danger">Drama</Link>
               </li>
               <li className="mb-3">
-                <a href="#" className="text-secondary text-decoration-none hover-text-danger">Horror</a>
+                <Link to="/category/horror" className="text-secondary text-decoration-none hover-text-danger">Horror</Link>
               </li>
               <li className="mb-3">
-                <a href="#" className="text-secondary text-decoration-none hover-text-danger">Documentary</a>
+                <Link to="/category/documentary" className="text-secondary text-decoration-none hover-text-danger">Documentary</Link>
               </li>
             </ul>
           </div>
@@ -117,9 +118,9 @@ const Footer = () => {
               </p>
             </div>
             <div className="col-md-6 text-center text-md-end">
-              <a href="/privacy" className="text-secondary text-decoration-none hover-text-danger me-4">Privacy Policy</a>
-              <a href="/disclaimers" className="text-secondary text-decoration-none hover-text-danger me-4">Disclaimers</a>
-              <a href="/termofservices" className="text-secondary text-decoration-none hover-text-danger me-4">Terms of Service</a>
+              <Link to="/privacy" className="text-secondary text-decoration-none hover-text-danger me-4">Privacy Policy</Link>
+              <Link to="/disclaimers" className="text-secondary text-decoration-none hover-text-danger me-4">Disclaimers</Link>
+              <Link to="/termofservices" className="text-secondary text-decoration-none hover-text-danger me-4">Terms of Service</Link>
             </div>
           </div>
         </div>
