@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../assets/style/Auth.css';
@@ -80,14 +80,14 @@ const Login = () => {
                 <input type="checkbox" />
                 <span className="checkbox-text">Remember me</span>
               </label>
-              <a href="#" className="forgot-link">Forgot Password?</a>
+              <Link to="/forgot-password" className="forgot-link">Forgot Password?</Link>
             </div>
 
             <button type="submit" className="auth-button">Sign In</button>
           </form>
 
           <div className="auth-footer">
-            <p>Don't have an account? <a href="/register" className="auth-link">Sign Up</a></p>
+            <p>Don't have an account? <Link to="/register" className="auth-link">Sign Up</Link></p>
           </div>
         </div>
       </div>
